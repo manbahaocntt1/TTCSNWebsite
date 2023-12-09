@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2BaoCaoBaoTri.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="report">
+            <div class="report__title">
+                BÁO CÁO BẢO TRÌ
+            </div>
+            <div class="report__content">
+                <form action="" class="report__content-form">
+                    <table class="report__content-table" >
+                        <tr>
+                            <td>Khoảng thời gian từ </td>
+                            <td>
+                                <input class="report__content-table-start" type="date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Đến </td>
+                            <td>
+                                <input class="report__content-table-end" type="date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Loại nhiệm vụ bảo dưỡng</td>
+                            <td>
+                                <label class="report__content-table" for="inputOrSelect"></label>
+                                <input type="text" id="inputOrSelect" name="inputOrSelect" placeholder="Nhập hoặc chọn...">
+                                <select id="inputOrSelect" name="inputOrSelect">
+                                    <option value="option1">Bảo dưỡng máy tính</option>
+                                    <option value="option2">Bảo dưỡng máy tính</option>
+                                    <option value="option3">Bảo dưỡng màn hình</option>
+                                </select>
+                            </td>
+                        </tr>
+    
+                       
+
+                    </table>
+                    <div  class="report__form-btn">
+                        <input type="button" id="report__form-save" value="Tạo báo cáo">
+                        <input type="button" id="report__form-cancel" value="Huỷ bỏ">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

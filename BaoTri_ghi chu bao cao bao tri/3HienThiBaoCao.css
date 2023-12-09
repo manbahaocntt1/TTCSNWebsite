@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+ .follow{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.follow .follow__content{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+.follow .follow__title{
+    height: 80px;
+    background-color: aliceblue;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 80px;
+
+}
+.follow .follow__content-title{
+    height: 80px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 80px;
+    margin: 0 0 50px 0;
+    align-self: center;
+}
+.follow table{
+    width: 100%;
+}
+
+
+.follow tr{
+    height: 40px;
+}
+.follow tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.stt{
+    width: 8px;
+}
+.follow .follow__content-contain-footer{
+   display: flex; 
+ 
+   
+}
+.follow .follow__content-contain-footer input{
+    margin-left: 80px;
+}
+.follow select{
+    width: 140px;
+}
+
+.follow__content-confirm{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0 140px 0;
+}

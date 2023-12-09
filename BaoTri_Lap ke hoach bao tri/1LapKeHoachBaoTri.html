@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1LapKeHoachBaoTri.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="plan">
+            <div class="plan__title">
+                LẬP KẾ HOẠCH BẢO TRÌ
+            </div>
+            <div class="plan__content">
+                <form action="" class="plan__content-form">
+                    <table class="plan__content-table" >
+                        <tr>
+                            <td>Tên kế hoạch</td>
+                            <td>
+                                <input class="plan__content-table-name" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mã tài sản</td>
+                            <td>
+                                <label class="plan__content-table-id" for="inputOrSelect"></label>
+                                <input type="text" id="inputOrSelect" name="inputOrSelect" placeholder="Nhập hoặc chọn...">
+                                <select id="inputOrSelect" name="inputOrSelect">
+                                    <option value="option1">Laptop</option>
+                                    <option value="option2">PC</option>
+                                    <option value="option3">IPAD</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ngay bắt đầu</td>
+                            <td>
+                                <input class="plan__content-table-start" type="date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ngày kết thúc &lpar; dự kiến &rpar;</td>
+                            <td>
+                                <input class="plan__content-table-end" type="date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kiểu bảo trì</td>
+                            <td>
+                                <input class="plan__content-table-type" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tần suất</td>
+                            <td>
+                                <input class="plan__content-table-frequency" type="text">
+                            </td>
+                        </tr>
+
+                    </table>
+                    <div  class="plan__form-btn">
+                        <input type="button" id="plan__form-save" value="Tạo kế hoạch">
+                        <input type="button" id="plan__form-cancel" value="Huỷ bỏ">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

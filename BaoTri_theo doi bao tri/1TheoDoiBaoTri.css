@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+ .follow{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.follow .follow__title{
+    height: 80px;
+    background-color: aliceblue;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+.follow table{
+    width: 100%;
+}
+.follow th,td{
+   width: 33%;
+   padding-left: 10px;
+}
+.follow tr{
+    height: 40px;
+}
+.follow tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+.follow .follow__content-btn{
+    margin: 40px;
+}

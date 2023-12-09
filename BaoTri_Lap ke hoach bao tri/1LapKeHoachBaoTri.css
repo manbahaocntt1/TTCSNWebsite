@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+.plan{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.plan__title{
+    height: 80px;
+    background-color: aliceblue;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+.plan__content-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+td{
+    padding: 16px 0;
+    width: 80px;
+}
+input{
+    width: 100%;
+}
+.plan__form-btn{
+    display: flex;
+    flex-direction: row;
+}
+#plan__form-save,#plan__form-cancel{
+    margin: 30px 10%;
+}
+#inputOrSelect{
+    width: 49%;
+}
