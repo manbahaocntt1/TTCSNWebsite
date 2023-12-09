@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quanlythongtin.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Quên Mật Khẩu</title>
+      <link rel="stylesheet" href="./assets/css/doimatkhau.css">
+    </head>
+    <body>
+    
+        <div class="container">
+            <h1 style="text-align: center;">Quên Mật Khẩu</h1>
+        
+            <form id="infoForm">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+              </div>
+
+              <div class="form-group">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" required>
+              </div>
+            <div class="btn-group">
+              <button type="submit" onclick="validateInput()"><a href="xacnhanmatkhau.html" style="text-decoration: none">Cấp lại mật khẩu</a></button>
+              <button type="submit"><a href="dangnhap.html" style="text-decoration: none">Hủy bỏ</a></button>
+            </div>
+            </form>
+          </div>
+          <script>
+            function validateInput() {
+              var email = document.getElementById('email').value;
+              var username = document.getElementById('username').value;
+        
+              // Kiểm tra điều kiện, ở đây là kiểm tra nếu cả email và tên đăng nhập đều trống
+              if (email === '' && username === '') {
+                alert('Sai Email và Tên đăng nhập.');
+                return;
+              }
+        
+              // Kiểm tra điều kiện, ở đây là kiểm tra nếu cả email và tên đăng nhập đều sai
+              if (!isValidEmail(email) && !isValidUsername(username)) {
+                alert('Sai Email và Tên đăng nhập.');
+                return;
+              }
+        
+              // Kiểm tra điều kiện khác nếu cần
+        
+              // Nếu không có lỗi, có thể tiếp tục xử lý hoặc chuyển hướng người dùng đến trang khác.
+            }
+        
+            function isValidEmail(email) {
+              // Thực hiện kiểm tra định dạng email ở đây
+              // Ví dụ đơn giản: kiểm tra có ký tự '@' trong email
+              return email.includes('@');
+            }
+        
+            function isValidUsername(username) {
+              // Thực hiện kiểm tra tên đăng nhập ở đây
+              // Ví dụ đơn giản: kiểm tra có ít nhất một ký tự
+              return username.length > 0;
+            }
+          </script>
+    </body>
+    </html>
