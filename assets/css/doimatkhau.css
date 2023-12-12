@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 600px; /* Chiều rộng tối đa của container */
+    width: 100%; /* Độ rộng tối đa là 600px, nhưng có thể co giãn */
+    text-align: left; /* Các chữ nằm sát lề trái của container */
+    border: 2px solid #ccc; /* Màu và độ rộng đường viền */
+    padding: 20px; /* Thêm một khoảng trắng bên trong container */
+  }
+  .form-group {
+ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 30px;
+  }
+  .form-group label {
+    width: 150px; 
+    margin-right: 10px;
+    height: 30px;
+  }
+  .form-group  input {
+    height: 30px;
+    flex: 1;
+    width: 100%;
+    padding-right: 30px; /* Để tạo không gian cho biểu tượng mắt */
+  }
+  .input-container {
+    position: relative;
+    flex: 1;
+  }
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .btn-group {
+    margin: 0px 50px;
+
+  }
+  
+  .btn-group button {
+    padding: 20px 30px;
+    margin: 20px; /* Khoảng cách lề trái và lề phải là 20px */
+  }
+ 
