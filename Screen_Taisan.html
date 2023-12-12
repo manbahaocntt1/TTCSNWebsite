@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaiSan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h1 class="p-3">Danh sách tài sản</h1>
+      <table class="table">
+          <thead>
+              <tr>
+                  <th scope="col">Mã tài sản</th>
+                  <th scope="col">Tên tài sản </th>
+                  <th scope="col"></th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <th scope="row">L01</th>
+                <td>Laptop Nelovo MS12344fg43332df22 128GB ROM 8GB RAM Black</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">L02</th>
+                <td>Laptop Asuck LKS1238b438483h 256GB ROM 16GB RAM Blue</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">P03</th>
+                <td>Phone XYZ X12 64GB ROM 4GB RAM Silver</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">T04</th>
+                <td>Tablet ABC Tab10 128GB ROM 6GB RAM Gold</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">S05</th>
+                <td>Smartwatch QWERTY SW200 Fitness Tracker Black</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">C06</th>
+                <td>Camera SnapShot Pro X20 20MP DSLR Black</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">H07</th>
+                <td>Headphones SonicBlast 500 Over-Ear Wireless Red</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">M08</th>
+                <td>Monitor UltraView 27-inch IPS 4K Display</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">D09</th>
+                <td>Drone SkyPilot Pro HD Camera GPS Quadcopter</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">G10</th>
+                <td>Gaming Console XPlay Elite 4K HDR 1TB Storage</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">R11</th>
+                <td>Router UltraFast Gigabit WiFi 6 Dual-Band Black</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">F12</th>
+                <td>Fitness Equipment PowerGym X2000 Multi-Function</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">B13</th>
+                <td>Bluetooth Speaker SonicBass Portable Waterproof</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">E14</th>
+                <td>External SSD ThunderDrive 1TB USB 3.1 Silver</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <tr>
+                <th scope="row">U15</th>
+                <td>USB-C Hub ConnectX Pro 8-in-1 Adapter Silver</td>
+                <td><a href="Screen_Taisanchitiet.html" class="btn btn-info detailBtn">Chi tiết</a></td>
+            </tr>
+            <div class="alert alert-danger mt-3" id="errorAlert" style="display: none;">
+              Lỗi kết nối cơ sở dữ liệu. Vui lòng thử lại sau.
+          </div>
+        </tbody>
+      </table>
+  </div>
+  
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script>
+    var detailButtons = document.querySelectorAll(".detailBtn");
+
+    detailButtons.forEach(function (button) {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            var isConnectedToDatabase = false;
+            if (isConnectedToDatabase) {
+                document.getElementById("errorAlert").style.display = "block";
+            } else {
+                window.location.href = "Screen_Taisanchitiet.html";
+            }
+        });
+    });
+</script>
+</html>
