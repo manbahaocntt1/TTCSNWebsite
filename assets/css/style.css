@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #dadada;
+}
+#header{
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+#banner{
+    display: flex;
+    justify-content: space-between; /* Đẩy các phần tử về hai đầu */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%; /* 100% chiều rộng của #header */
+}
+#logo {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước tối đa */
+}
+
+.search {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-right: 10px; /* Lề phải 10cm */
+}
+
+.search input {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.search button {
+    padding: 8px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+#nav{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0; 
+}
+#nav li {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng mặc định */
+    transition: box-shadow 0.3s;
+    height: 60px;
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+#nav li:hover{
+    background-color: orange;
+}
+    /*-------menu cấp 2------*/
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #dadada;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+  /*-------hết menu cấp 2------*/
+#nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+#nav a:hover {
+    color: black;
+}
+#slider{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@keyframes changeColor {
+    0% {
+      color: #99FFCC;
+    }
+    5% {
+      color: #99FF66;
+    }
+    10% {
+      color: #99FF00;
+    }
+    15% {
+      color: #66FFFF;
+    }
+    20% {
+      color: #66FF99;
+    }
+    25% {
+        color: #66FF33;
+      }
+    30% {
+        color: #66FF00;
+      }
+      35% {
+        color: #CC99FF;
+      }
+      40% {
+        color: #CC9999;
+      }
+      45% {
+        color: #9999FF;
+      }
+      50% {
+        color: #999900;
+      }
+      55% {
+        color: #339999;
+      }
+      60% {
+        color: #009966;
+      }
+      65% {
+        color: #FF66FF;
+      }
+      70% {
+        color: #6666CC	;
+      }
+      75% {
+        color: #FF3300	;
+      }
+      80% {
+        color: #9933CC	;
+      }
+      85% {
+        color: #663399	;
+      }
+     90% {
+        color: #CC0066	;
+      }
+      95% {
+        color: #990000;
+      }
+      100% {
+        color: #FF0000	;
+      }
+  }
+  
+
+  #yourElement {
+    animation: changeColor 5s infinite; 
+  }
